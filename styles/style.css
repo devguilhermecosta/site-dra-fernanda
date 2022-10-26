@@ -177,6 +177,48 @@ main {
     background-color: #000000;
 }
 
+.container-profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 2%;
+}
+
+.box-img-profile {
+    text-align: center;
+}
+
+.img-profile {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+}
+
+.content-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-profile h2 {
+    font-size: 20px;
+    color: darkblue;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.content-profile p {
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 15px;
+    max-width: 450px;
+}
+
+.container-profile p:last-child {
+    padding-bottom: 0;
+}
+
 @media screen and (min-width: 600px) {
     .menu {
         top: 52px; 
@@ -209,6 +251,18 @@ main {
 
     .bullets {
         display: none;
+    }
+
+    .container-profile {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .content-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 10px;
     }
 }
 
