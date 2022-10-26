@@ -148,7 +148,7 @@ main {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    max-width: 450px;
+    max-width: 447.5px;
     height: 250px;
     padding: 2%;
     margin: 0;
@@ -158,6 +158,7 @@ main {
 
 .child-intro:nth-of-type(1), .child-intro:nth-of-type(3) {
     display: none;
+    max-width: 300px;
     margin: 0;
 }
 
@@ -203,13 +204,13 @@ main {
 
 .content-profile h2 {
     font-size: 20px;
-    color: darkblue;
+    color: rgb(21, 73, 107);
     text-align: center;
     padding-bottom: 10px;
 }
 
 .content-profile p {
-    text-align: center;
+    text-align: justify;
     line-height: 1.5;
     padding-bottom: 15px;
     max-width: 450px;
