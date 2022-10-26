@@ -13,10 +13,8 @@ body, html {
 }
 
 header {
-    padding: 10px 2%;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -25,18 +23,18 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .logo {
-    width: 100%;
-    text-align: center;
+    text-align: left;
+    padding-left: 5%;
 }
 
 .input-menu-mobile {
     width: 50px;
     height: 40px;
     padding: 3px;
+    margin: 2% 2% 0 0;
     border: none;
     border-radius: 10px;
     background-image: url('../images/menu.png');
@@ -56,6 +54,8 @@ header {
 }
 
 .menu {
+    position: absolute;
+    top: 46px;
     display: none;
     text-align: center;
     background-color: #ccc;
@@ -73,6 +73,7 @@ header {
 }
 
 .menu ul li a {
+    font-weight: 500;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -82,6 +83,133 @@ header {
 .menu ul li a:hover {
     background-color: #000000;
     color: #ffffff;
+}
+
+main {
+    padding: 0 0;
+}
+
+.box-mosaic {
+    display: inline-block;
+    width: 100%;
+}
+
+.mosaic-wraper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
+
+.mosaic-wraper:nth-of-type(2) {
+    display: none;
+}
+
+.mosaic-children {
+    display: none;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 300px;
+    border: 5px solid white;
+    background-color: #ccc;
+}
+
+.first {
+    display: block;
+}
+
+.img-mosaic {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+}
+
+.intro {
+    width: 100%;
+    max-width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0 2%;
+    color: white;
+}
+
+.box-intro {
+    position: relative;
+    top: -45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.child-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+    padding: 2%;
+    margin: 0;
+    text-align: center;
+    background-color: #3b3b3b;
+}
+
+.child-intro:nth-of-type(1), .child-intro:nth-of-type(3) {
+    display: none;
+    margin: 0;
+}
+
+.bullets {
+    width: 100%;
+}
+
+.bullets span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.bullets span:nth-of-type(1) {
+    background-color: #000000;
+}
+
+@media screen and (min-width: 600px) {
+    .menu {
+        top: 52px; 
+    }
+
+    .second {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+        top: 55px;
+    }
+
+    .box-intro {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .child-intro:nth-of-type(1), .child-intro:nth-of-type(3) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 225px;
+        background-color: #5b5b5b;
+    }
+
+    .bullets {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -98,6 +226,8 @@ header {
     }
 
     .menu {
+        position: relative;
+        top: 0;
         display: block;
         width: 100%;
         background-color: #ffffff;
@@ -112,5 +242,19 @@ header {
     .menu ul li a:hover {
         background-color: #ffffff;
         color: rgb(150, 150, 150);
+    }
+
+    .third, .fourth {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .mosaic-children {
+        display: block;
+    }
+
+    .mosaic-wraper:nth-of-type(2) {
+        display: flex;
     }
 }
