@@ -65,6 +65,7 @@ header {
     list-style: none;
     line-height: 1.5;
     width: 100%;
+    padding: 10px 0;
 }
 
 .menu ul li a {
@@ -131,12 +132,12 @@ main {
     padding: 2%;
     margin: 0;
     text-align: center;
-    background-color: #3b3b3b;
+    background-color: #1B3A4F;
 }
 
 .child-intro:nth-of-type(2) {
     max-width: 350px;
-    background-color: #5b5b5b;
+    background-color: #234B66;
 }
 
 .child-intro:nth-of-type(1), .child-intro:nth-of-type(3) {
@@ -195,6 +196,68 @@ main {
 
 .container-profile p:last-child {
     padding-bottom: 0;
+}
+
+.videos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+.box-video {
+    width: 100%;
+    max-width: 365px;
+    padding: 5px;
+    max-height: 205px;
+}
+
+.box-video iframe {
+    width: 100%;
+    padding: 5px;
+}
+
+.container-treatments {
+    margin-top: 5%;
+    text-align: center;
+    background-color: #F0F0F0;
+}
+
+.container-treatments > h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(21, 73, 107);
+    padding-top: 5%;
+}
+
+.box-treatments {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    color: #4b4b4b;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.treatment {
+    width: 100%;
+    max-width: 266px;
+    padding: 5% 1%;
+}
+
+.treatment h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.treatment p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.container-treatments {
+    padding: 0 2%;
 }
 
 @media screen and (min-width: 600px) {
