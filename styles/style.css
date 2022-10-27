@@ -260,6 +260,57 @@ main {
     padding: 0 2%;
 }
 
+.container-testimony {
+    padding: 25px;
+    text-align: center;
+}
+
+.container-testimony > h2 {
+    font-size: 18px;
+    padding-bottom: 25px;
+    color: rgb(21, 73, 107);
+}
+
+.box-testimony {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+}
+
+.box-testimony > p {
+    color: #4b4b4b;
+    padding-bottom: 5%;
+}
+
+.data-user-testimony {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-user-testimony > p {
+    padding-left: 2%;
+    color: #4b4b4b;
+}
+
+.bullets {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.bullets span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.bullets span:nth-of-type(1) {
+    background-color: #000000;
+}
+
 @media screen and (min-width: 600px) {
     .content-profile p {
         text-align: justify;
