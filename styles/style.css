@@ -376,9 +376,76 @@ main {
     padding-bottom: 2%;
 }
 
+.container-contact {
+    text-align: center;
+    padding: 2% 0;
+}
+
+.container-contact h2 {
+    color:rgb(21, 73, 107);
+}
+
+.form-contact {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 2%;
+    font-size: 16px;
+    color: #3b3b3b;
+}
+
+.form-contact > div {
+    padding: 5px;
+}
+
+.container-form-email-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contact .box-int {
+    padding: 10px 0;
+}
+
+.form-contact label {
+    display: block;
+    text-align: left;
+}
+
+.form-contact input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dadada;
+}
+
+.form-contact textarea {
+    width: 100%;
+    padding: 10px;
+    resize: none;
+}
+
+.form-contact input[type="submit"] {
+    width: 100px;
+    height: 45px;
+    font-size: 18px;
+    color: white;
+    background-color: #234B66;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 600px) {
     .content-profile p {
         text-align: justify;
+    }
+
+    .container-form-email-name {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container-form-email-name div:nth-of-type(1) {
+        margin-right: 5px;
     }
 }
 
