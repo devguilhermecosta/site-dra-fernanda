@@ -15,7 +15,11 @@ body, html {
 header {
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 main {
@@ -32,7 +36,6 @@ main {
 
 .logo {
     text-align: left;
-    padding-left: 5%;
 }
 
 .input-menu-mobile {
@@ -56,7 +59,7 @@ main {
     position: absolute;
     top: 35px;
     display: none;
-    text-align: center;
+    text-align: right;
     background-color: white;
     width: 100%;
 }
@@ -82,6 +85,12 @@ main {
 
 .menu ul li a:hover {
     color: #ccc;
+}
+
+.box-mosaic {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .mosaic-wraper {
@@ -178,6 +187,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #5b5b5b;
 }
 
 .content-profile h2 {
@@ -521,6 +531,10 @@ footer p {
 @media screen and (min-width: 992px) {
     header {
         flex-direction: row;
+    }
+
+    .box-menu-logo {
+        width: auto;
     }
 
     .logo {
