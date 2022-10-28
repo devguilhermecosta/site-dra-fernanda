@@ -59,7 +59,7 @@ main {
     position: absolute;
     top: 35px;
     display: none;
-    text-align: right;
+    text-align: center;
     background-color: white;
     width: 100%;
 }
@@ -550,6 +550,7 @@ footer p {
         position: relative;
         top: 0;
         display: flex;
+        text-align: right;
         width: 100%;
     }
 
